@@ -1,54 +1,1317 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ofertas do Dia — Melhores Descontos</title>
-<meta name="description" content="As melhores ofertas e descontos do dia em Amazon, Mercado Livre e mais.">
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-       background: #f5f5f5; color: #222; line-height: 1.5; padding: 16px; }
-
-.header { max-width: 900px; margin: 0 auto 20px;
-          background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-          color: #fff; padding: 24px; border-radius: 12px; text-align: center; }
-.header h1 { font-size: 24px; margin-bottom: 6px; }
-.header p { opacity: 0.9; font-size: 14px; }
-.grid { max-width: 900px; margin: 0 auto;
-        display: grid; gap: 14px;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-.card { background: #fff; border-radius: 10px; overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0,0,0,.06); text-decoration: none; color: inherit;
-        display: flex; flex-direction: column; }
-.card:active { transform: scale(0.98); }
-.card .img { background: #fafafa; padding: 16px; text-align: center; height: 180px;
-             display: flex; align-items: center; justify-content: center; }
-.card .img img { max-width: 100%; max-height: 100%; object-fit: contain; }
-.card .body { padding: 12px 14px; flex: 1; display: flex; flex-direction: column; }
-.card .titulo { font-size: 13px; line-height: 1.4; margin-bottom: 8px; flex: 1;
-                display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
-                overflow: hidden; }
-.card .preco { font-size: 20px; font-weight: bold; color: #2e7d32; }
-.card .badge { display: inline-block; background: #d32f2f; color: #fff;
-               padding: 2px 8px; border-radius: 4px; font-size: 11px;
-               font-weight: bold; margin-bottom: 6px; align-self: flex-start; }
-.empty { text-align: center; padding: 40px; color: #888; grid-column: 1/-1; }
-.footer { max-width: 900px; margin: 20px auto 0; padding: 16px; text-align: center;
-          color: #888; font-size: 12px; }
-</style>
-</head>
-<body>
-<div class="header">
-  <h1>🔥 Ofertas do Dia</h1>
-  <p>Os melhores descontos selecionados — atualizado em 18/05/2026 13:26</p>
-</div>
-<div class="grid">
-  <div class="empty">Nenhuma oferta disponível.</div>
-</div>
-<div class="footer">
-  Como Associado, ganho comissões sobre compras qualificadas.<br>
-  Preços e disponibilidade sujeitos a alteração.
-</div>
-</body>
-</html>
+<!doctype html>
+<html lang="pt-BR"><head>
+<title>Relâmpago · Diário de Compras Inteligentes</title>
+<meta name="description" content="Curadoria humana, preços rastreados por bot. As melhores ofertas do dia em Amazon e Mercado Livre.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/styles.css">
+</head><body>
+<div class="top-bar"><div class="top-bar-track"><span>Frete grátis acima de R$ 199</span><span><span class="pulse"></span>Bot rastreando 240 lojas em tempo real</span><span><span class="pulse"></span>Ofertas relâmpago: ATIVAS AGORA</span><span>Devolução fácil em 30 dias</span><span>Cashback em todas as compras</span><span>Curadoria humana, preços de bot</span><span>Frete grátis acima de R$ 199</span><span><span class="pulse"></span>Bot rastreando 240 lojas em tempo real</span><span><span class="pulse"></span>Ofertas relâmpago: ATIVAS AGORA</span><span>Devolução fácil em 30 dias</span><span>Cashback em todas as compras</span><span>Curadoria humana, preços de bot</span></div></div>
+<header class="nav"><div class="container nav-inner">
+  <div class="nav-left">
+    <a href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/" class="brand" aria-label="Ofertas Relâmpago">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></span>
+      <span>Relâmpago</span>
+      <span class="brand-sub">·BOT</span>
+    </a>
+  </div>
+  <nav class="nav-links">
+    <a href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/" class="active">Início</a>
+    <a href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/#produtos">Ofertas</a>
+    <a href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/#artigos">Editorial</a>
+    <a href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/#manifesto">Sobre o Bot</a>
+  </nav>
+  <div class="nav-right">
+    <button class="icon-btn" aria-label="Buscar" onclick="document.getElementById('search-overlay')?.classList.add('open')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg></button>
+    <button class="icon-btn" aria-label="Favoritos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+  </div>
+</div></header>
+<section class="hero"><div class="container">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Edição · 18 may 2026</div>
+      <h1>
+        Ofertas que<br>
+        o algoritmo <span class="ital">caça</span>.<br>
+        O <span class="strike">preço cheio</span> que<br>
+        você nunca paga.
+      </h1>
+      <p class="hero-lede">
+        Um robô vasculha lojas a cada 2 horas. Filtros automáticos
+        eliminam falsos descontos. Você recebe só o que vale: descontos
+        reais, produtos que duram, sem barulho.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href="#produtos">Ver ofertas de hoje <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="#artigos">Ler o editorial</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><div class="num">49</div><div class="lbl">Ofertas Ativas</div></div>
+        <div class="hero-meta-item"><div class="num">2h</div><div class="lbl">Entre Atualizações</div></div>
+        <div class="hero-meta-item"><div class="num">24/7</div><div class="lbl">Bot Sempre Ativo</div></div>
+      </div>
+    </div>
+    <div style="position:relative">
+      <div class="hero-card">
+        <div class="ph ph-1 ph-stripe"></div>
+        <div class="ph-label">Capa · Achado do dia</div>
+        <div class="hero-card-overlay">
+          <div class="hero-card-tag">
+            <span class="strike-old">Sem barulho. Só preço.</span>
+            <span class="price">Relâmpago</span>
+          </div>
+          <div class="hero-card-discount">BOT</div>
+        </div>
+      </div>
+      <div class="hero-floating-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"Em segundos eu recebi o alerta e fechei. Economia real."</div>
+        <div class="who"><span class="avatar">MV</span><span>Marina, SP</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<section class="trust-strip"><div class="container">
+  <div class="trust-row">
+    <span>4,9 ★ avaliação média</span>
+    <span class="sep"></span>
+    <span>Curadoria <em style="font-style:italic">humana</em></span>
+    <span class="sep"></span>
+    <span>Bot 24/7</span>
+    <span class="sep"></span>
+    <span>Frete grátis Prime</span>
+    <span class="sep"></span>
+    <span>Preço rastreado</span>
+  </div>
+</div></section>
+<section class="container">
+  <div class="flash"><div class="flash-inner">
+    <div>
+      <div class="eyebrow" style="color:oklch(80% 0.16 35)"><span class="dot"></span>Drop Relâmpago · ao vivo</div>
+      <h2>Duas horas.<br><span class="ital">Próximo</span> drop.<br>Estoque que some.</h2>
+      <p>A cada ciclo, o bot escaneia milhares de produtos e seleciona os melhores descontos. Acaba quando o cronômetro zera — ou quando o estoque acabar.</p>
+      <a class="btn btn-accent" href="#produtos">Entrar no drop <span class="arrow">→</span></a>
+    </div>
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><div class="cd-num" data-cd="h">--</div><div class="cd-lbl">Horas</div></div>
+      <div class="cd-box"><div class="cd-num" data-cd="m">--</div><div class="cd-lbl">Minutos</div></div>
+      <div class="cd-box"><div class="cd-num" data-cd="s">--</div><div class="cd-lbl">Segundos</div></div>
+    </div>
+  </div></div>
+</section>
+<section class="section" id="artigos"><div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>O Diário</div>
+      <h2>Lê-se primeiro. <span class="ital">Compra-se</span> com confiança.</h2>
+    </div>
+    <a class="tail" href="#produtos">Ver ofertas <span class="arrow">→</span></a>
+  </div>
+  <div class="articles">
+    <article class="article feature">
+      <div class="article-img">
+        <div class="ph ph-2 ph-stripe"></div>
+        <div class="pill">Guia</div>
+        <div class="ph-tag">Como o bot funciona</div>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">Sempre atualizado · 5 min de leitura</div>
+        <h3>Como o Relâmpago Bot encontra preços que ninguém mais vê</h3>
+        <p class="article-excerpt">Uma engrenagem de scrapers, filtros e dedup que recusa falsos descontos. Aqui dentro, só o que o bot considera real.</p>
+        <div class="article-foot">
+          <span style="display:inline-flex;align-items:center;gap:8px"><span class="avatar" style="width:24px;height:24px;font-size:9px">RB</span><span>Relâmpago Bot · 24/7</span></span>
+          <a class="read" href="#produtos">Ver ofertas <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+    <article class="article">
+      <div class="article-img"><div class="ph ph-3 ph-stripe"></div><div class="pill">Critério</div><div class="ph-tag">20% mínimo</div></div>
+      <div class="article-body">
+        <div class="article-meta">Filtros do bot · 3 min</div>
+        <h3>Por que descontos abaixo de 20% nunca aparecem aqui</h3>
+        <p class="article-excerpt">A régua é alta: pelo menos 20% off, dedup de 48h, score por categoria.</p>
+        <div class="article-foot"><span style="color:var(--ink-3)">Filtros ativos</span><a class="read" href="#produtos">Ler <span class="arrow">→</span></a></div>
+      </div>
+    </article>
+    <article class="article">
+      <div class="article-img"><div class="ph ph-4 ph-stripe"></div><div class="pill">Tracking</div><div class="ph-tag">Preço histórico</div></div>
+      <div class="article-body">
+        <div class="article-meta">Histórico de 30 dias · 4 min</div>
+        <h3>Cada oferta passa pelo histórico de preço dos últimos 30 dias</h3>
+        <p class="article-excerpt">Se o "desconto" é só um preço que voltou ao normal, o bot ignora. Quer mínimo histórico real.</p>
+        <div class="article-foot"><span style="color:var(--ink-3)">Algoritmo</span><a class="read" href="#produtos">Ler <span class="arrow">→</span></a></div>
+      </div>
+    </article>
+  </div>
+</div></section>
+<section class="section" id="produtos"><div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Vitrine</div>
+      <h2>Achados de <span class="ital">agora</span> — handpicked.</h2>
+    </div>
+    <div class="cat-tabs"><button class="cat-tab active" data-cat="all">Tudo<span class="count">·49</span></button><button class="cat-tab" data-cat="Amazon">Amazon<span class="count">·47</span></button><button class="cat-tab" data-cat="Mercado Livre">Mercado Livre<span class="count">·2</span></button></div>
+  </div>
+  <div class="products" id="products-grid"><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/fritadeira-eletrica-wap-air-fryer-oven-digital-black-inox-12/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_898071-MLA99545431524_122025-O.webp" alt="Fritadeira Elétrica Wap Air Fryer Oven Digital Black Inox 12 Litros Com Revestim" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:var(--bg-card);padding:12%">
+    <div class="product-badges"><span class="badge hot">-52%</span><span class="badge new">Novo</span></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Mercado Livre</span>
+    <h4>Fritadeira Elétrica Wap Air Fryer Oven Digital Black Inox 12 Litros Com Revestimento Antia</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 429,00</span>
+      <span class="price-old">R$ 893,75</span>
+      <span class="price-save">economia R$ 464,75</span>
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:0%"></i></div>
+      <span>200 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/fritadeira-eletrica-air-fryer-oven-black-inox-wap-waod2-12-l/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_705038-MLA99580433144_122025-O.webp" alt="Fritadeira Elétrica Air Fryer Oven Black Inox Wap Waod2 12 Litros 4 Em 1 Porta C" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:var(--bg-card);padding:12%">
+    <div class="product-badges"><span class="badge hot">-52%</span><span class="badge new">Novo</span></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Mercado Livre</span>
+    <h4>Fritadeira Elétrica Air Fryer Oven Black Inox Wap Waod2 12 Litros 4 Em 1 Porta Com Abertur</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 429,00</span>
+      <span class="price-old">R$ 893,75</span>
+      <span class="price-save">economia R$ 464,75</span>
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:12%"></i></div>
+      <span>177 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/super-mixer-agratto-127v-60hz-agratto-4653-preto-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"><span class="badge new">Novo</span></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Super Mixer Agratto 127v/60hz, Agratto, 4653, Preto</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 63,80</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:23%"></i></div>
+      <span>154 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/chapa-taiff-style-pro-titanium-bivolt-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>CHAPA TAIFF STYLE PRO TITANIUM BIVOLT</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 157,18</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:34%"></i></div>
+      <span>131 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/escova-secadora-britania-bec02pr-bivolt-4-em-1-1300w-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Escova Secadora Britânia BEC02PR Bivolt 4 em 1 1300W</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 80,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:46%"></i></div>
+      <span>108 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/buba-massageador-de-gengiva-com-case-transparente-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>BUBA Massageador De Gengiva Com Case, Transparente</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 7,09</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:58%"></i></div>
+      <span>85 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/locao-hidratante-relaxante-para-uso-diario-johnson-s-baby-ho/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Loção Hidratante Relaxante Para Uso Diário Johnson&#x27;s Baby Hora Do Sono, 200mL</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 38,99</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:69%"></i></div>
+      <span>62 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/kit-dupla-limpeza-com-massageador-facial-hada-labo-cleansing/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-1 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Kit Dupla Limpeza com Massageador Facial - Hada Labo® Cleansing Oil 200ml + Gokujyun Face </h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 129,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:80%"></i></div>
+      <span>39 em estoque</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/hipoglos-creme-preventivo-de-assaduras-transparente-leve-120/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-2 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Hipoglós Creme Preventivo de Assaduras Transparente, Leve 120g Pague 80g</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 63,83</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:92%"></i></div>
+      <span>Restam 16</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/victoria-s-secret-bare-eau-de-parfum-original-100-ml-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Victoria&#x27;s Secret Bare Eau de Parfum, Original - 100 ml</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 522,80</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/nivea-creme-facial-nutritivo-ultraleve-7-em-1-100g-pele-suav/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>NIVEA Creme Facial Nutritivo Ultraleve 7 em 1 100g, Pele Suave e Macia, Acalma, Alivia Res</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 28,65</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/homem-essence-parfum-natura-100ml-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Homem Essence Parfum Natura 100ml</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 169,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/electrolux-air-fryer-forno-5-x-1-12l-1700w-digital-espeto-gi/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Electrolux Air Fryer Forno 5 x 1 12L 1700W Digital Espeto Giratório 2 Bandejas Antiaderent</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 699,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/camera-inteligente-compativel-com-alexa-wi-fi-full-hd-im5-sc/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Câmera Inteligente Compatível com Alexa Wi-Fi Full HD iM5 SC Branco Intelbras</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 319,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/cafeteira-espresso-nespresso-essenza-mini-preta-127v-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-1 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Cafeteira Espresso Nespresso Essenza Mini Preta 127V</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 440,10</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/cafeteira-nescafe-dolce-gusto-genio-s-basic-grafite-dgs5-127/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-2 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Cafeteira Nescafé Dolce Gusto, Genio S Basic, Grafite, DGS5, 127V</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 419,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/aoc-43s5135-78g-smart-tv-led-43-full-hd-design-sem-bordas-wi/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>AOC 43S5135/78G - Smart TV LED 43&quot; Full HD, Design sem bordas, Wifi, Conversor Digita</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 1.449,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/camera-de-seguranca-wi-fi-360o-1080p-full-hd-tp-link-tapo-tc/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Camera de Segurança Wi-Fi 360º, 1080p Full HD TP-Link Tapo TC70, Visão Noturna, Audio de d</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 178,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/camera-inteligente-interna-compativel-com-alexa-wi-fi-full-h/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Câmera Inteligente Interna Compatível com Alexa Wi-fi Full HD iM3 C Preto Intelbras</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 206,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/headset-gamer-redragon-zeus-lite-preto-p3-h510-lt-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Headset Gamer Redragon Zeus Lite Preto P3 H510-LT</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 165,26</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/geonav-power-bank-carregador-portatil-universal-20-000mah-us/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Geonav Power Bank, Carregador Portátil Universal 20.000mAh, USB-A (até 18W) + USB-C (até 2</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 184,97</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/vizzano-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-1 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>VIZZANO</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 135,68</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/bateria-carregador-portatil-3x-usb-c-20000mah-super-rapida-4/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-2 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Bateria Carregador Portatil 3x USB-C 20000mAh Super Rapida 45W - Bege</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 269,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/conjunto-kit-cafeteira-hario-v60-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Conjunto Kit Cafeteira Hario V60</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 134,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/cafeteira-french-press-preziosa-350-ml-bialetti-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Cafeteira French Press Preziosa, 350 ml, Bialetti</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 189,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/fritadeira-eaf30-4-litros-1400w-127w-electrolux-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Fritadeira Eaf30 4 Litros 1400W 127W - Electrolux</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 338,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/havit-headphone-fone-de-ouvido-h2002d-gamer-com-microfone-fa/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Havit Headphone Fone de Ouvido H2002d, Gamer, com Microfone, Falante 53mm, Plug 3, 5mm: co</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 152,97</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/yopro-bebida-lactea-uht-morango-15g-de-proteinas-250ml-amazo/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>YoPRO Bebida Láctea UHT Morango 15g de proteínas 250ml</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 11,49</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mamae-e-bebe-agua-de-colonia-tradional-100-ml-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-1 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mamãe e Bebê Água de Colônia Tradional 100 ml</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 64,80</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/ciclo-cosmeticos-deo-colonia-nah-hello-hello-100ml-lata-amaz/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-2 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Ciclo Cosméticos Deo Colonia Nah Hello! Hello! 100Ml Lata</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 69,21</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/monitor-acer-ek251q-gbi-painel-led-ips-de-24-5-resolucao-ful/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Monitor Acer EK251Q Gbi Painel LED IPS de 24.5 Resolução Full HD 120Hz, VGA e HDMI (1.4)</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 639,98</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mouse-gamer-sem-fio-logitech-g502-lightspeed-com-tecnologia-/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mouse Gamer Sem Fio Logitech G502 LIGHTSPEED com Tecnologia RGB LIGHTSYNC, Ajustes de Peso</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 619,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/skip-hop-mochila-infantil-zoo-macaco-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Skip Hop, Mochila Infantil Zoo Macaco</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 149,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mouse-gamer-sem-fio-logitech-g305-lightspeed-com-6-botoes-pr/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mouse Gamer Sem Fio Logitech G305 LIGHTSPEED com 6 Botões Programáveis e Até 12.000 DPI - </h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 199,99</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mouse-gamer-redragon-predator-rgb-m612-rgb-preto-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mouse Gamer Redragon Predator RGB M612-RGB, Preto</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 85,07</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mouse-gamer-logitech-g502-hero-com-rgb-lightsync-ajustes-de-/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-1 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mouse Gamer Logitech G502 HERO com RGB LIGHTSYNC, Ajustes de Peso, 11 Botões Programáveis </h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 269,99</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/caderno-espiral-five-star-72081-app-de-estudo-200-folhas-28-/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-2 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Caderno espiral Five Star 72081 + app de estudo, 200 folhas, 28 x 21 cm, preto</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 62,98</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/elg-f80n-suporte-articulado-de-mesa-pistao-a-gas-design-comp/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>ELG, F80N, Suporte Articulado de Mesa, Pistão a Gás, Design Compacto e Retrátil, Ergonômic</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 159,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/puma-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>PUMA</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 249,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/fritadeira-sem-oleo-oster-127v-ofrt520-preto-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Fritadeira Sem Óleo Oster 127V - OFRT520, PRETO</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 289,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/monitor-pc-gamer-lg-24ms500-24-ips-100hz-full-hd-hdmi-2x-ama/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Monitor PC Gamer LG 24MS500 24” IPS 100Hz Full HD HDMI 2x</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 479,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mouse-gamer-sem-fio-logitech-g305-lightspeed-com-6-botoes-pr/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mouse Gamer Sem Fio Logitech G305 LIGHTSPEED com 6 Botões Programáveis e Até 12.000 DPI - </h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 189,99</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/monitor-gamer-lg-ultragear-24-24gs60f-b-ips-full-hd-180hz-1m/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-1 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Monitor Gamer LG UltraGear 24” 24GS60F-B IPS Full HD 180Hz 1ms (GtG) NVIDIA® G-SYNC® AMD F</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 739,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mouse-gamer-logitech-g203-lightsync-rgb-efeito-de-ondas-de-c/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-2 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Mouse Gamer Logitech G203 LIGHTSYNC RGB, Efeito de Ondas de Cores, 6 Botões Programáveis e</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 100,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/hyperx-teclado-gamer-hyperx-alloy-core-rgb-abnt2-preto-amazo/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-3 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>HyperX Teclado Gamer HyperX Alloy Core RGB, ABNT2, PRETO</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 199,99</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/mondial-fritadeira-sem-oleo-air-fryer-3-5l-preto-inox-1500w-/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-4 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>MONDIAL Fritadeira Sem Óleo Air Fryer 3,5L, Preto/Inox, 1500W, 110V - AF-30 I</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 219,90</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/johnson-s-baby-colonia-refrescante-lavanda-para-bebes-200ml-/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-5 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Johnson&#x27;s Baby Colônia Refrescante Lavanda Para Bebês,200ml</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 23,77</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/lattafa-yara-yara-candy-edp-sprays-100-ml-96-4-g-conjunto-de/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-6 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>LATTAFA Yara &amp; Yara Candy EDP Sprays 100 ml (96.4 g) Conjunto de presente doce, floral</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 500,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a><a class="product" href="https://matheusmoraesnascimento-beep.github.io/ofertas-relampago-bot/oferta/be-delicious-eau-de-parfum-feminino-100-ml-amazon/" style="text-decoration:none;color:inherit">
+  <div class="product-media">
+    <div class="ph ph-7 ph-stripe"></div>
+    <div class="product-badges"></div>
+    <button class="product-wish" aria-label="Favoritar" onclick="event.preventDefault();this.classList.toggle('active')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg></button>
+    <div class="product-add"><span>Ver oferta</span><span>→</span></div>
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Amazon</span>
+    <h4>Be Delicious Eau de Parfum Feminino 100 ml</h4>
+    <div class="product-rating"><span class="stars">★★★★★</span><span>verificado por bot</span></div>
+    <div class="product-prices">
+      <span class="price-now">R$ 500,00</span>
+      
+      
+    </div>
+    <div class="stock">
+      <div class="stock-bar"><i style="width:98%"></i></div>
+      <span>Restam 5</span>
+    </div>
+  </div>
+</a></div>
+</div></section>
+<section class="section" id="manifesto"><div class="container">
+  <div class="editorial">
+    <div class="editorial-img"><div class="ph ph-7 ph-stripe"></div><div class="ph-tag">Bot · Sempre ligado</div></div>
+    <div class="editorial-body">
+      <div class="eyebrow"><span class="dot"></span>Manifesto</div>
+      <h2>Comprar bem<br>é uma <span class="ital">forma de ler</span>.</h2>
+      <p style="color:var(--ink-2);font-size:16px;margin:0;max-width:480px">Não somos cupom. Somos um bot que rastreia preços de verdade e uma curadoria que filtra ruído — pra você comprar só o que vale.</p>
+      <div style="display:flex;gap:12px;margin-top:8px"><a class="btn btn-primary" href="#produtos">Ver ofertas <span class="arrow">→</span></a></div>
+      <div class="editorial-stats">
+        <div><div class="num">24/7</div><div class="lbl">Bot ativo</div></div>
+        <div><div class="num">2h</div><div class="lbl">Ciclo de busca</div></div>
+        <div><div class="num">20%</div><div class="lbl">Desconto mínimo</div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<section class="section"><div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Leitores que viraram clientes</div>
+      <h2>Histórias <span class="ital">reais</span> de quem deixou de pagar caro.</h2>
+    </div>
+    <div class="tail" style="display:flex;gap:8px">
+      <span style="display:inline-flex;align-items:center;gap:6px;color:var(--ink-2)">
+        <span class="stars" style="color:var(--gold);letter-spacing:2px">★★★★★</span>
+        <b style="font-weight:500;color:var(--ink)">4,9</b>
+        <span style="font-family:var(--mono);font-size:11px;color:var(--ink-3)">· verificado</span>
+      </span>
+    </div>
+  </div>
+  <div class="testimonials">
+    <article class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p class="quote">Recebi alerta de uma air fryer 50% off, fechei em 1 minuto. Já comprava sem desconto antes.</p>
+      <div class="person"><span class="avatar">MV</span><span><div class="name">Marina V.</div><div class="role">São Paulo</div></span><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> verificado</span></div>
+    </article>
+    <article class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p class="quote">O bot pegou um perfume que eu queria há meses com 60% off. Tinha o preço histórico, sabia que era de verdade.</p>
+      <div class="person"><span class="avatar">JR</span><span><div class="name">João R.</div><div class="role">Rio de Janeiro</div></span><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> verificado</span></div>
+    </article>
+    <article class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p class="quote">Curadoria séria. Não enche o feed de tranqueira — só vem o que merece atenção.</p>
+      <div class="person"><span class="avatar">AC</span><span><div class="name">Ana C.</div><div class="role">Belo Horizonte</div></span><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> verificado</span></div>
+    </article>
+  </div>
+</div></section>
+<section class="container">
+  <div class="newsletter"><div class="newsletter-inner">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Receba no WhatsApp</div>
+      <h2>Receba o drop antes <span class="ital">de todo mundo</span>.</h2>
+      <p>O bot manda direto no WhatsApp toda vez que acha uma oferta de verdade. Curadoria humana, preço de bot.</p>
+      <form class="nl-form" onsubmit="event.preventDefault();this.querySelector('button').innerHTML='No WhatsApp já! <svg style=\'width:14px;height:14px\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M5 12l5 5L20 7\'/></svg>'">
+        <input type="email" placeholder="seu@email.com" aria-label="Seu e-mail">
+        <button class="btn btn-accent" type="submit">Quero entrar <span class="arrow">→</span></button>
+      </form>
+      <div class="nl-perks">
+        <span><span class="tick">✓</span> Sem spam</span>
+        <span><span class="tick">✓</span> Acesso antecipado</span>
+        <span><span class="tick">✓</span> Só ofertas reais</span>
+      </div>
+    </div>
+    <div class="nl-art" aria-hidden="true">
+      <div class="nl-coin c1">⚡</div>
+      <div class="nl-coin c2">%</div>
+      <div class="nl-coin c3">R$</div>
+    </div>
+  </div></div>
+</section>
+<footer><div class="container">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <h4>Relâmpago<span style="color:var(--accent)">.</span></h4>
+      <p>O diário de compras inteligentes do Brasil. Curadoria humana, preços rastreados por bot.</p>
+      <div style="display:flex;gap:8px;margin-top:22px">
+        <span class="badge" style="background:rgba(247,243,236,.08);color:var(--bg);border-radius:999px">WhatsApp</span>
+        <span class="badge" style="background:rgba(247,243,236,.08);color:var(--bg);border-radius:999px">Instagram</span>
+      </div>
+    </div>
+    <div class="foot"><h5>Loja</h5><ul>
+      <li><a href="#produtos">Ofertas Relâmpago</a></li>
+      <li><a href="#produtos">Mais descontos</a></li>
+      <li><a href="#artigos">Editorial</a></li>
+    </ul></div>
+    <div class="foot"><h5>Editorial</h5><ul>
+      <li><a href="#manifesto">Manifesto</a></li>
+      <li><a href="#artigos">Diário do bot</a></li>
+    </ul></div>
+    <div class="foot"><h5>Disclaimer</h5><ul>
+      <li>Como Associado, ganho comissões</li>
+      <li>Preços sujeitos a alteração</li>
+      <li>Confirme antes de comprar</li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Relâmpago Bot · Curadoria + bot 24/7</span>
+    <div class="foot-bottom-links"><a href="#">Privacidade</a><a href="#">Termos</a></div>
+  </div>
+</div></footer>
+<script>
+(function(){
+  var hours=2;
+  var end=new Date(); end.setHours(end.getHours()+hours); end.setMinutes(0); end.setSeconds(0);
+  function tick(){
+    var diff=Math.max(0,(end-new Date())/1000);
+    var h=Math.floor(diff/3600),m=Math.floor((diff%3600)/60),s=Math.floor(diff%60);
+    var box=document.getElementById('countdown'); if(!box) return;
+    box.querySelector('[data-cd=h]').textContent=String(h).padStart(2,'0');
+    box.querySelector('[data-cd=m]').textContent=String(m).padStart(2,'0');
+    box.querySelector('[data-cd=s]').textContent=String(s).padStart(2,'0');
+    if(diff<=0){end.setHours(end.getHours()+hours);}
+  }
+  tick(); setInterval(tick,1000);
+  document.querySelectorAll('.cat-tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.cat-tab').forEach(function(x){x.classList.remove('active')});
+      t.classList.add('active');
+      var cat=t.dataset.cat;
+      document.querySelectorAll('#products-grid .product').forEach(function(p){
+        var loja=p.querySelector('.product-cat').textContent.trim();
+        p.style.display=(cat==='all'||loja===cat)?'':'none';
+      });
+    });
+  });
+})();
+</script>
+</body></html>
